@@ -1,0 +1,18 @@
+
+<header class="container-outer" fxLayout="row" fxLayoutAlign="space-between center"  fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="center stretch">
+	<div class="container" fxFlex="20">
+		<div class="container-inner">
+			<button [routerLink]="['']" routerLinkActive="router-link-active">Home</button>
+		</div>
+	</div>
+	<div class="container" fxFlex="80" fxFlexOrder.lt-sm="3">
+		<div class="container-inner">
+			Search field component goes here
+		</div>
+	</div>
+	<div class="container" fxFlex="20" fxFlexOrder.lt-sm="2">
+		<div class="container-inner">
+			<button [routerLink]="['/row-example']" routerLinkActive="router-link-active">Examples</button>
+		</div>
+	</div>
+</header>

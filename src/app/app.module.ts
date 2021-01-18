@@ -3,14 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './modules/material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { LayoutSideModule } from './layouts/layout-side/layout-side.module';
+import { LayoutFullModule } from './layouts/layout-full/layout-full.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    FlexLayoutModule,
+    LayoutSideModule,
+    LayoutFullModule
   ],
   providers: [],
   bootstrap: [AppComponent]
